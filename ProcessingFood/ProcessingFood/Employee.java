@@ -3,20 +3,27 @@ import java.util.LinkedList;
 import java.util.concurrent.locks.Condition;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
+import java.util.concurrent.ExecutorService;
+import java.util.concurrent.Executors;
+import FoodComponents.Kitchen;
 
 import FoodComponents.Food;
 public class Employee implements Runnable{
+    private Kitchen kitchen;
     private EmployeeList employee;
     private LinkedList<Food> foodQueue;
     private int orderMemorySize;
     private Lock mutex = new ReentrantLock();
     private Condition hasWorkToDo = mutex.newCondition();
     private Condition capacityIsNotExceeded = mutex.newCondition();
+    private ExecutorService foodExecutor;
     
-    public Employee(EmployeeList employee) {
+    public Employee(EmployeeList employee, Kitchen kitchen) {
         this.employee = employee;
+        this.kitchen = kitchen;
         orderMemorySize = employee.getMaxOrderMemory();
         foodQueue = new LinkedList<Food>();
+        foodExecutor = Executors.newFixedThreadPool(orderMemorySize);
     }
 
     @Override
@@ -25,14 +32,24 @@ public class Employee implements Runnable{
     }
 
     private void work() {
-        for (int i = 0; i < foodQueue.size(); i++) {
-            if (foodQueue.get(i) != null) {
-                System.out.println("Employee " + employee.getName()  + " is working on " + foodMemory[i].getName());
-                try {
-                    Thread.sleep((long) (foodQueue.get(i).getProcessingTime() * employee.getSpeed() * 1000));
-                } catch (InterruptedException e) {
-                    e.printStackTrace();
+        while (true) {
+            mutex.lock();
+            try {
+                while (foodQueue.isEmpty()) {
+                    hasWorkToDo.await();
                 }
+                Food food = foodQueue.removeFirst();
+                mutex.unlock();
+                try {
+                    System.out.println("Employee " + employee.getName() + " is preparing " + food.getName());
+                    foodExecutor.execute(new CookingProcess(food, kitchen, this));
+                } finally {
+                    mutex.lock();
+                }
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            } finally {
+                mutex.unlock();
             }
         }
     }

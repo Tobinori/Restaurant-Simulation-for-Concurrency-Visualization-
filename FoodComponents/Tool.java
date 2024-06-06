@@ -1,10 +1,10 @@
 package FoodComponents;
 public class Tool{
     ToolList tool;
-    boolean isInUse;
+    boolean isAviable;
         
     public Tool(ToolList tool) {
-        this.isAviable = false;
+        this.isAviable = true;
         this.tool = tool;
     }
 
@@ -13,22 +13,27 @@ public class Tool{
     }
 
     public void setInUse(boolean inUse) {
-        isInUse = inUse;
+        isAviable = inUse;
     }
 
-    public void useTool() {
-        if (isInUse) {
+    public synchronized void useTool() throws InterruptedException{
+        if (!isAviable) {
             System.out.println("The tool " + tool.getName() + " is already in use.");
+            System.out.println("Waiting for the tool to be available.");
+            wait();
         }
-        else {
-            isInUse = true;
-            System.out.println("The tool " + tool.getName() + " is now in use.");
+        isAviable = false;
+        System.out.println("The tool " + tool.getName() + " is now in use.");
         }
-    }
 
     public synchronized void releaseTool() {
-        isInUse = false;
+        isAviable = true;
+        notifyAll();
         System.out.println("The tool " + tool.getName() + " is now available.");
+    }
+
+    public ToolList getTool() {
+        return tool;
     }
 
 

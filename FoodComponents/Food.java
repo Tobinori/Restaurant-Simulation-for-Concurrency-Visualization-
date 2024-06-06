@@ -4,46 +4,69 @@ import java.util.ArrayList;
 import ProcessingFood.KitchenPosition;
 public class Food{
 
-    String name;
-    ArrayList<Ingredient> ingredients;
-    ArrayList<Tool> tools;
-    int processingTime;
-    KitchenPosition position;
+    private MenuList dish;
+    private ArrayList<IngredientsList> ingredientsNeeded;
+    private ArrayList<ToolList> toolsNeeded;
+    private boolean isCompleted;
+    private boolean isAssigned;
+    private boolean isInStock;
 
-    public Food(String name, ArrayList<Ingredient> ingredients, ArrayList<Tool> tools, int processingTime, KitchenPosition position) {
-        this.name = name;
-        this.ingredients = ingredients;
-        this.tools = tools;
-        this.processingTime = processingTime;
-        this.position = position;
+
+    public Food(MenuList dish, ArrayList<IngredientsList> ingredientsNeeded, ArrayList<ToolList> toolsNeeded) {
+        this.dish = dish;
+        this.ingredientsNeeded = ingredientsNeeded;
+        this.toolsNeeded = toolsNeeded;
+        isCompleted = false;
+        isAssigned = false;
     }
 
     public String getName() {
-        return name;
+        return dish.getName();
     }
 
     public int getProcessingTime() {
-        return processingTime;
+        return dish.getPreperationTime();
     }
 
-    public ArrayList<Ingredient> getIngredients() {
-        return ingredients;
+    public ArrayList<IngredientsList> getIngredients() {
+        return ingredientsNeeded;
     }
 
-    public ArrayList<Tool> getTools() {
-        return tools;
+    public ArrayList<ToolList> getTools() {
+        return toolsNeeded;
     }
 
-    public void addIngredient(Ingredient ingredient) {
-        ingredients.add(ingredient);
-    }
 
-    public void addTool(Tool tool) {
-        tools.add(tool);
+    public void addTool(ToolList tool) {
+        toolsNeeded.add(tool);
     }
 
     public KitchenPosition getPosition() {
-        return position;
+        return dish.getKitchenPosition();
+    }
+
+    public boolean isCompleted() {
+        return isCompleted;
+    }
+
+    public void setCompleted() {
+        isCompleted = true;
+    }
+
+    public boolean isAssigned() {
+        return isAssigned;
+    }
+
+    public void setAssigned() {
+        isAssigned = true;
+    }
+
+    public boolean isInStock() {
+        return isInStock;
+    }
+
+    public void setInStock(boolean inStock) {
+        isInStock = inStock;
     }
 
 

@@ -11,6 +11,7 @@ public class Ingredient{
     public Ingredient(IngredientsList ingredient, AtomicInteger quantity) {
         this.name = ingredient;
         this.quantity = quantity;
+        this.isAvilable = new AtomicBoolean(true);
     }
 
     public Ingredient(IngredientsList ingredient) {
@@ -42,8 +43,8 @@ public class Ingredient{
 
     public void useIngredient() {
         if(quantity.get() == 1){
-            isAvilable.set(false);
             quantity.getAndDecrement();
+            isAvilable.set(false);
             System.out.println("The last " + name + " has been used and is now out of stock.");
         }
         else if (quantity.get() > 1) {

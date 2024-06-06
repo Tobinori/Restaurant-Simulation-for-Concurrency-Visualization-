@@ -12,9 +12,7 @@ import FoodComponents.Food;
 public class OrderManager{
     private ArrayList<Order> openOrders;
     private ArrayList<Order> announcedOrders;
-    private int MAX_ORDERS = 30;
-    private ScheduledExecutorService orderAnnouncer;
-    private ArrayList<Food> foodToBeProcessed;
+    private int MAX_ORDERS = 20;
     private Lock mutex = new ReentrantLock();
     private Condition notEmpty = mutex.newCondition();
     private Condition notFull = mutex.newCondition();
@@ -37,19 +35,14 @@ public class OrderManager{
             while (openOrders.size() == MAX_ORDERS) {
                 notFull.await();
             }
-            openOrders.addLast(order);
             orderCount++;
+            order.setOrderNumber(orderCount);
+            openOrders.addLast(order);
             notEmpty.signal();
         } finally {
             mutex.unlock();
         }
-    }
-
-    public ArrayList<Order> getNewOrders() {
-        for (int i = 0; i < MAX_ORDERS ; i++) {
-            announcedOrders.add(openOrders.get(i));
-        }
-        return announcedOrders;
+        
     }
 
     public Order getNewOrder() throws InterruptedException {
