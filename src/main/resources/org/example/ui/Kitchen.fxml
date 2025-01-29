@@ -1,0 +1,529 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="637.0" prefWidth="952.0" style="-fx-background-color: beige;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.KitchenController">
+   <children>
+      <HBox layoutX="-14.0" prefHeight="637.0" prefWidth="952.0">
+         <children>
+            <VBox prefHeight="637.0" prefWidth="491.0">
+               <children>
+                  <VBox prefHeight="400.0" prefWidth="600.0" style="-fx-border-color: black; -fx-background-color: lightblue;">
+                     <children>
+                        <HBox alignment="CENTER" prefHeight="392.0" prefWidth="580.0">
+                           <children>
+                              <VBox prefHeight="287.0" prefWidth="533.0">
+                                 <children>
+                                    <HBox prefHeight="155.0" prefWidth="533.0">
+                                       <children>
+                                          <ImageView fitHeight="139.0" fitWidth="186.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@FoodComponents/cooking.gif" />
+                                             </image>
+                                          </ImageView>
+                                          <ImageView fitHeight="74.0" fitWidth="67.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/cookingProcess/png/hot%20dog.png" />
+                                             </image>
+                                          </ImageView>
+                                          <HBox prefHeight="100.0" prefWidth="200.0">
+                                             <children>
+                                                <GridPane>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </GridPane>
+                                                <GridPane>
+                                                   <columnConstraints>
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                      <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+                                                   </columnConstraints>
+                                                   <rowConstraints>
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                      <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                                                   </rowConstraints>
+                                                   <children>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                      <ImageView fitHeight="22.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true" GridPane.columnIndex="1" GridPane.rowIndex="2">
+                                                         <image>
+                                                            <Image url="@images/cookingProcess/png/salty_pie.png" />
+                                                         </image>
+                                                      </ImageView>
+                                                   </children>
+                                                </GridPane>
+                                                <VBox prefHeight="200.0" prefWidth="100.0" />
+                                             </children>
+                                          </HBox>
+                                       </children>
+                                    </HBox>
+                                    <HBox alignment="BOTTOM_CENTER" prefHeight="164.0" prefWidth="533.0">
+                                       <children>
+                                          <ImageView fitHeight="111.0" fitWidth="164.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/cookingProcess/png/salad.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Pane prefHeight="128.0" prefWidth="5.0" />
+                                          <ImageView fitHeight="74.0" fitWidth="170.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/cookingProcess/png/microwave.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Pane prefHeight="128.0" prefWidth="24.0" />
+                                          <ImageView fitHeight="104.0" fitWidth="151.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/cookingProcess/png/grill.png" />
+                                             </image>
+                                          </ImageView>
+                                       </children></HBox>
+                                 </children>
+                              </VBox>
+                           </children>
+                           <padding>
+                              <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                           </padding>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <HBox prefHeight="440.0" prefWidth="580.0" style="-fx-background-color: lightgray; -fx-border-color: black;">
+                     <children>
+                        <VBox prefHeight="176.0" prefWidth="225.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberTopLeft" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="orderOpenTopLeft" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberMiddleLeft" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="openOrderMiddleLeft" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberBottomLeft" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="openOrderBottomLeft" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="176.0" prefWidth="225.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberTopRight" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="orderOpenTopRight" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberMiddleRight" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="openOrderMiddleRight" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0" style="-fx-background-color: gray; -fx-border-color: black;">
+                                 <children>
+                                    <VBox prefHeight="100.0" prefWidth="59.0">
+                                       <children>
+                                          <Label text="Order-Nr." />
+                                          <TextField fx:id="orderNumberBottomRight" prefHeight="25.0" prefWidth="54.0" />
+                                       </children>
+                                    </VBox>
+                                    <VBox alignment="CENTER" prefHeight="100.0" prefWidth="166.0">
+                                       <children>
+                                          <Label alignment="CENTER" text="Order" />
+                                          <TextArea fx:id="openOrderBottomRight" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <padding>
+                        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+                     </padding>
+                  </HBox>
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </VBox>
+            <VBox prefHeight="637.0" prefWidth="478.0">
+               <children>
+                  <HBox prefHeight="325.0" prefWidth="478.0">
+                     <children>
+                        <VBox prefHeight="637.0" prefWidth="215.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/chef/chef4.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Diego" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="129.0" prefWidth="220.0">
+                                       <children>
+                                          <Label text="Counter" />
+                                          <TextArea fx:id="memoryDiego" prefHeight="112.0" prefWidth="210.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="129.0" prefWidth="111.0">
+                                       <children>
+                                          <ImageView fitHeight="112.0" fitWidth="126.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/chef/chef1.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Yoga" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="129.0" prefWidth="219.0">
+                                       <children>
+                                          <Label text="Stove" />
+                                          <TextArea fx:id="memoryYoga" prefHeight="112.0" prefWidth="216.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                        <VBox prefHeight="348.0" prefWidth="225.0">
+                           <children>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="129.0" prefWidth="112.0">
+                                       <children>
+                                          <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/chef/chef5.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Richi" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="129.0" prefWidth="218.0">
+                                       <children>
+                                          <Label text="Salad Station" />
+                                          <TextArea fx:id="memoryRichi" prefHeight="200.0" prefWidth="200.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                              <HBox prefHeight="100.0" prefWidth="200.0">
+                                 <children>
+                                    <VBox alignment="CENTER" prefHeight="200.0" prefWidth="100.0">
+                                       <children>
+                                          <ImageView fitHeight="112.0" fitWidth="112.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@images/chef/chef6.png" />
+                                             </image>
+                                          </ImageView>
+                                          <Label text="Evelyn" />
+                                       </children>
+                                    </VBox>
+                                    <VBox prefHeight="129.0" prefWidth="219.0">
+                                       <children>
+                                          <Label text="Grill" />
+                                          <TextArea fx:id="memoryEvelyn" prefHeight="112.0" prefWidth="208.0" />
+                                       </children>
+                                    </VBox>
+                                 </children>
+                                 <padding>
+                                    <Insets bottom="4.0" left="4.0" right="4.0" top="4.0" />
+                                 </padding>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                  </HBox>
+                  <VBox alignment="CENTER" prefHeight="293.0" prefWidth="470.0">
+                     <children>
+                        <Label alignment="CENTER" prefHeight="17.0" prefWidth="471.0" style="-fx-background-color: lightblue;" text="Bestellungsaufgabe" textAlignment="CENTER" textOverrun="CENTER_ELLIPSIS">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </Label>
+                        <HBox alignment="CENTER_LEFT" prefHeight="278.0" prefWidth="478.0">
+                           <children>
+                              <VBox prefHeight="263.0" prefWidth="187.0">
+                                 <children>
+                                    <TextArea prefHeight="263.0" prefWidth="185.0" promptText="Menu" text="1. Salad&#10;2. Salty Pie&#10;3. Fried Fish &#10;    with Salad&#10;4. Hot Dog&#10;5. Long John&#10;6. Pepito&#10;7. Steak&#10;8. Backed Potato&#10;9. Steak with Salad&#10;10. Bread Salad&#10;11. Potato Salad&#10;12. Carrot Salad&#10;13. Taboule&#10;14. Salty Pie with Salad&#10;15. Backed Potato &#10;      with Salad&#10;16. Pork Sausage &#10;      with Potato Salad&#10;17. Pork Sausage" />
+                                 </children>
+                              </VBox>
+                              <VBox prefHeight="263.0" prefWidth="179.0">
+                                 <children>
+                                    <TextField fx:id="numberToAddOrder" />
+                                    <TextArea fx:id="orderInTaking" prefHeight="235.0" prefWidth="157.0" />
+                                 </children>
+                              </VBox>
+                              <VBox alignment="CENTER" prefHeight="263.0" prefWidth="104.0">
+                                 <children>
+                                    <Button mnemonicParsing="false" onAction="#addOrder" prefHeight="53.0" prefWidth="117.0" style="-fx-background-color: rosybrown; -fx-border-color: black;" text="Add Item to Order">
+                                       <font>
+                                          <Font size="10.0" />
+                                       </font></Button>
+                                    <Pane prefHeight="121.0" prefWidth="104.0" />
+                                    <Button mnemonicParsing="false" onAction="#placeOrder" prefHeight="51.0" prefWidth="117.0" style="-fx-background-color: rosybrown; -fx-border-color: black;" text="Place Order" />
+                                 </children></VBox>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
